@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- !DOCTYPE html tells browser this is using HTML5 -->
+<!-- EXAMPLE CODE HEADER/DISCLAIMER
+ 
+Project:  Project1-About Me
+Name: Tate Thomas
+Submitted: 5/17/24
+ 
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
+ 
+Reflection (1-2 paragraphs):  I found this to be pretty easy to write. I'm fairly familiar
+with html already, but I'm not too familiar with all the html tags that are availible to
+use, so that was a good learning experience. I also added some light css just to center
+the content and fulfill some of the requirements.
+ 
+-->
+<html>
+
+    <head>
+        <title>About Tate</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <main>
+
+            <h1 id="title">Tate Thomas</h1>
+            
+            <img id="portrait" src="./profile.jpg" alt="Picture of myself">
+
+            <section id="personal-info">
+                <h2>Personal Info</h2>
+                <ul>
+                    <li><b>Major:</b> Computer Science (emphasis in Computer Science), Physics</li>
+                    <li><b>High School:</b> Weber High School, Pleasant View, UT. 2021</li>
+                    <li><b>Current year at UVU:</b> Junior</li>
+                    <li><b>Favorite ice cream:</b> Cookies and Cream</li>
+                </ul>
+            </section>
+
+            <section id="favorite-books">
+                <h2>My Five Favorite Books</h2>
+                <ol>
+                    <li><i>Harry Potter,</i> <a href="https://www.jkrowling.com/">J. K. Rowling</a></li>
+                    <li><i>The Maze Runner,</i> <a href="https://www.jamesdashner.com">James Dashner</a></li>
+                    <li><i>Spacetime and Geometry: An Introduction to General Relativity,</i> <a href="https://www.preposterousuniverse.com/">Sean Carroll</a></li>
+                    <li><i>Quantum Computation and Quantum Information,</i> <a href="https://michaelnielsen.org/">Michael A. Nielsen</a> and <a href="https://physics.mit.edu/faculty/isaac-chuang/">Isaac L. Chuang</a></li>
+                    <li><i>Artificial Intelligence: A Modern Approach,</i> <a href="https://people.eecs.berkeley.edu/~russell/">Stuart J. Russell</a> and <a href="https://www.norvig.com/">Peter Norvig</a></li>
+                </ol>
+            </section>
+
+            <section id="haiku">
+                <h2>Event Horizon (Haiku)</h2>
+                <p>I'm fascinated with black holes, and I've done some light undergrad research on them, so I asked ChatGPT to write a Haiku for me, since I do not know how to write them (no code was generated in the process):</p>
+                <div>
+                    <p>Silent void whispers,<br>Stars swallowed in endless night&mdash;<br>Gravity's dark maw.</p>
+                </div>
+            </section>
+
+            <section id="brief-essay">
+                <h2>My Personal Interests</h2>
+                <p>I love to learn. One of my favorite things to learn about is physics; there's so many things that are real in this universe, yet seem so counterintuitive to our daily lives. I also like learning about many other things, like: CS, math, history, etc.</p>
+                <p>I also like to play video games. I mostly play the Switch nowadays, since I can take it anywhere and can pause at any time, but I also own a PS4. I'm currently playing through The Legend of Zelda: Tears of the Kingdom and Pikmin 4, and I also like to play Mario Kart 8 Deluxe with my girlfriend. I don't have much time to play video games anymore, unfortunately.</p>
+                <p>Lastly, I like to read. I'm currently re-reading Harry Potter (I'm still on the first book), which I haven't read since elementary school. I recently re-watched all of the movies again and became obsessed with Harry Potter again, as I was when I was a kid. I also read textbooks when I get the chance, but once again, I don't have much free time.</p>
+            </section>
+
+            <section id="class-schedule">
+                <h2>Class Schedule - Fall 2024</h2>
+                <p></p>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                    <tr>
+                        <th>11:30</th>
+                        <td class="commute">Go to school</td>
+                        <td></td>
+                        <td class="commute">Go to school</td>
+                        <td></td>
+                        <td class="commute">Go to school</td>
+                    </tr>
+                    <tr>
+                        <th>12:00</th>
+                        <td class="course-0" rowspan="2">MATH 2270 - Linear Algebra</td>
+                        <td></td>
+                        <td class="course-0" rowspan="2">MATH 2270 - Linear Algebra</td>
+                        <td></td>
+                        <td class="course-0" rowspan="2">MATH 2270 - Linear Algebra</td>
+                    </tr>
+                    <tr>
+                        <th>12:30</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>1:00</th>
+                        <td class="course-1" rowspan="2">MATH 2280 - Ordinary Differential Equations</td>
+                        <td class="commute">Go to school</td>
+                        <td class="course-1" rowspan="2">MATH 2280 - Ordinary Differential Equations</td>
+                        <td class="commute">Go to school</td>
+                        <td class="course-1" rowspan="2">MATH 2280 - Ordinary Differential Equations</td>
+                    </tr>
+                    <tr>
+                        <th>1:30</th>
+                        <td class="course-2" rowspan="2">PHYS 489R - Undergraduate Research in Physics</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>2:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="commute">Go home</td>
+                    </tr>
+                    <tr>
+                        <th>2:30</th>
+                        <td></td>
+                        <td class="course-3" rowspan="3">PHYS 3300 - Mathematical Physics</td>
+                        <td></td>
+                        <td class="course-3" rowspan="3">PHYS 3300 - Mathematical Physics</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>3:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>3:30</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>4:00</th>
+                        <td class="course-4" rowspan="3">CS 2690 - Computer Networks II</td>
+                        <td class="course-5" rowspan="2">PHYS 490R - Seminar</td>
+                        <td class="course-4" rowspan="3">CS 2690 - Computer Networks II</td>
+                        <td class="commute">Go home<td>
+                    </tr>
+                    <tr>
+                        <th>4:30</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>5:00</th>
+                        <td class="commute">Go home</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>5:30</th>
+                        <td class="commute">Go home</td>
+                        <td></td>
+                        <td class="commute">Go home</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Online</th>
+                        <td class="online" colspan="5">CS 3270 - Python Software Development</td>
+                    </tr>
+                </table>
+            </section>
+
+        </main>
+
+    </body>
+
+</html>
